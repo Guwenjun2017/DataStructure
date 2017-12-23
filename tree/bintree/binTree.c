@@ -36,12 +36,17 @@ int Height(BinTreeNode t){
     }
 }
 //void PreOrder(BinTreeNode p){
-//    if(p != NULL){
-//	printf("%c\t", p->data);
-//	PreOrder(p->lchild);
-//	PreOrder(p->rchild);
-//    }
-//}
+/*计算叶结点数*/
+int mycount(BinTreeNode t){
+    if(t == NULL)
+	return 0;
+    else if(t->lchild == NULL && t->rchild == NULL)
+	return 1;
+    else
+	return mycount(t->lchild) + mycount(t->rchild);
+
+    return 0;
+}
 void PreOrder(BinTreeNode p, int *count){
     if(p != NULL){
 	(*count)++;
@@ -49,6 +54,8 @@ void PreOrder(BinTreeNode p, int *count){
 	PreOrder(p->lchild, count);
 	PreOrder(p->rchild, count);
     }
+
+    return;
 }
 void InOrder(BinTreeNode p){
     if(p != NULL){

@@ -10,6 +10,7 @@ typedef struct _BinTreeNode{
 
 void createBinTree(BinTreeNode *t);
 int Height(BinTreeNode t);
+int mycount(BinTreeNode t);
 
 //void PreOrder(BinTreeNode p);
 void PreOrder(BinTreeNode p, int *count);
