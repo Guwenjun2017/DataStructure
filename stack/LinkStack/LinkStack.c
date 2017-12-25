@@ -39,6 +39,7 @@ int PopStack(LinkStack *LS, DataType *e){
     LS->head = node->next;
     *e = node->data;
     free(node);
+
     return 1;
 }
 //取栈顶元素

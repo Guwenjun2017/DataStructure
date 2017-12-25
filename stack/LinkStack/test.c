@@ -24,6 +24,7 @@ int main(int argc, char **argv)
 
    printf("此时的栈长为: %d\n", GetLength_LinkStack(LS));
    Clear_LinkStack(LS);
+   //DataType now_length = 0;
    printf("此时的栈长为: %d\n", GetLength_LinkStack(LS));
 
 }

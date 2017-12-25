@@ -17,7 +17,8 @@ int main(int argc, char **argv)
 	    return 0;
 	}
     }
-    printf("依次出栈的元素是:\n");
+    printf("先将a b c d e f依次入栈.\n");
+    printf("依次出栈的元素是(两个):\n");
     if(PopStack(&S, &e) == 1){
 	printf("%4c\n", e);
     }

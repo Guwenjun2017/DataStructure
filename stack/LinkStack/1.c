@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 typedef int DataType;
 typedef struct node{
@@ -15,7 +14,7 @@ void Coversion_10_to_2(int N){
 	p->data = N%2;
 	p->next = top;
 	top = p;
-	N = N/2;
+	N = N/8;
     }while(N != 0);
     while(top != NULL){
 	p = top;
